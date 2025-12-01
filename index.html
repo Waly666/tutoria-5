@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial: Manejo del DOM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tutorial: Manejo del DOM en JavaScript</h1>
+        <p>Aprende a manipular el Document Object Model (DOM) con JavaScript</p>
+    </header>
+
+    <main>
+        <!-- Sección 1: Selección de elementos -->
+        <section class="tutorial-section">
+            <h2>1. Selección de Elementos</h2>
+            <p>JavaScript nos permite seleccionar elementos del DOM de varias formas:</p>
+            
+            <div class="example-box">
+                <h3>Ejemplo: getElementById</h3>
+                <p id="elemento-id">Este es un elemento con ID "elemento-id"</p>
+                <button id="btn-seleccionar-id">Seleccionar por ID</button>
+            </div>
+
+            <div class="example-box">
+                <h3>Ejemplo: getElementsByClassName</h3>
+                <p class="clase-ejemplo">Elemento con clase "clase-ejemplo" #1</p>
+                <p class="clase-ejemplo">Elemento con clase "clase-ejemplo" #2</p>
+                <button id="btn-seleccionar-clase">Seleccionar por Clase</button>
+            </div>
+
+            <div class="example-box">
+                <h3>Ejemplo: querySelector y querySelectorAll</h3>
+                <div data-info="ejemplo">Elemento con data-info="ejemplo"</div>
+                <button id="btn-query-selector">Usar querySelector</button>
+            </div>
+        </section>
+
+        <!-- Sección 2: Modificación de contenido -->
+        <section class="tutorial-section">
+            <h2>2. Modificación de Contenido</h2>
+            <p>Podemos cambiar el contenido de los elementos:</p>
+
+            <div class="example-box">
+                <h3>Ejemplo: innerHTML y textContent</h3>
+                <p id="texto-modificar">Este texto será modificado</p>
+                <button id="btn-cambiar-texto">Cambiar Texto</button>
+                <button id="btn-cambiar-html">Cambiar HTML</button>
+            </div>
+        </section>
+
+        <!-- Sección 3: Modificación de estilos -->
+        <section class="tutorial-section">
+            <h2>3. Modificación de Estilos</h2>
+            <p>Podemos cambiar los estilos CSS de los elementos:</p>
+
+            <div class="example-box">
+                <h3>Ejemplo: Cambiar estilos</h3>
+                <div id="caja-estilos" class="caja-demo">
+                    Esta caja cambiará de estilo
+                </div>
+                <button id="btn-cambiar-color">Cambiar Color</button>
+                <button id="btn-cambiar-tamano">Cambiar Tamaño</button>
+                <button id="btn-toggle-clase">Toggle Clase</button>
+            </div>
+        </section>
+
+        <!-- Sección 4: Crear y eliminar elementos -->
+        <section class="tutorial-section">
+            <h2>4. Crear y Eliminar Elementos</h2>
+            <p>Podemos crear nuevos elementos y eliminar existentes:</p>
+
+            <div class="example-box">
+                <h3>Ejemplo: Crear elementos</h3>
+                <ul id="lista-dinamica">
+                    <li>Elemento inicial</li>
+                </ul>
+                <button id="btn-agregar-elemento">Agregar Elemento</button>
+                <button id="btn-eliminar-elemento">Eliminar Último</button>
+            </div>
+        </section>
+
+        <!-- Sección 5: Eventos -->
+        <section class="tutorial-section">
+            <h2>5. Manejo de Eventos</h2>
+            <p>Los eventos permiten responder a las acciones del usuario:</p>
+
+            <div class="example-box">
+                <h3>Ejemplo: Eventos del mouse</h3>
+                <div id="area-eventos" class="area-interactiva">
+                    Pasa el mouse por aquí o haz clic
+                </div>
+                <p id="info-eventos">Información del evento aparecerá aquí</p>
+            </div>
+
+            <div class="example-box">
+                <h3>Ejemplo: Eventos de teclado</h3>
+                <input type="text" id="input-teclado" placeholder="Escribe algo...">
+                <p id="info-teclado">Información del teclado aparecerá aquí</p>
+            </div>
+        </section>
+
+        <!-- Sección 6: Formularios -->
+        <section class="tutorial-section">
+            <h2>6. Manipulación de Formularios</h2>
+            <p>Podemos leer y modificar valores de formularios:</p>
+
+            <div class="example-box">
+                <h3>Ejemplo: Formulario interactivo</h3>
+                <form id="formulario-ejemplo">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje"></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div id="resultado-formulario"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Tutorial de Manejo del DOM - JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
