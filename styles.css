@@ -1,0 +1,60 @@
+
+body{
+    margin: 0;
+    font-family: Exo;
+
+}
+
+.hero{
+
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #5E3DE1, #B03DE1);
+    color:white;
+}
+.card{  
+    background: white;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px ;
+    border-style: solid;
+    border-color: #494bd6;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    background-color:#494bd6 ;
+    color:white;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+button:hover{
+    background-color:#EA31ED ;
+}
+.cuadro{
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin-bottom: 10px;
+
+}
+.activo {
+    background: lime;
+    transform: scale(1.1);
+    transition: 0.33s;
+}
+
+input,select{
+
+    padding: 10px;
+    margin-right: 5px;
+    border: 4px solid #494bd6;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px #494bd6;
+    margin-bottom: 5px;
+    
+}
