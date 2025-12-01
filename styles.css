@@ -1,0 +1,225 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* Main content */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Secciones del tutorial */
+.tutorial-section {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tutorial-section h2 {
+    color: #667eea;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 0.5rem;
+}
+
+.tutorial-section > p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+/* Cajas de ejemplo */
+.example-box {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.example-box h3 {
+    color: #495057;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Botones */
+button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.25rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #5a6fd6;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Caja demo para estilos */
+.caja-demo {
+    background: #e9ecef;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.caja-demo.destacada {
+    background: #ffc107;
+    color: #212529;
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+/* Área interactiva */
+.area-interactiva {
+    background: #e9ecef;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.area-interactiva:hover {
+    background: #dee2e6;
+}
+
+/* Lista dinámica */
+#lista-dinamica {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+#lista-dinamica li {
+    background: #e9ecef;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Formulario */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#resultado-formulario {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #d4edda;
+    border-radius: 5px;
+    display: none;
+}
+
+#resultado-formulario.visible {
+    display: block;
+}
+
+/* Info eventos */
+#info-eventos,
+#info-teclado {
+    background: #e9ecef;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    font-family: monospace;
+}
+
+/* Input teclado */
+#input-teclado {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Elementos seleccionados (highlight) */
+.highlight {
+    background-color: #ffc107 !important;
+    transition: background-color 0.3s ease;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header {
+        padding: 1rem;
+    }
+    
+    .tutorial-section {
+        padding: 1rem;
+    }
+    
+    button {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
